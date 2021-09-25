@@ -129,7 +129,7 @@ public class DesktopFolderApp : Gtk.Application {
                 // it seems we can't control an error reading settings!!
                 // loki -> GLib.Settings elementary_files_settings = new GLib.Settings ("org.pantheon.files.preferences");
                 GLib.Settings elementary_files_settings = new GLib.Settings ("io.elementary.files.preferences");
-                single_click = elementary_files_settings.get_boolean ("single-click");
+                single_click = true;
             }
         } catch (Error error) {
             // we don't have any files settings, using default config
